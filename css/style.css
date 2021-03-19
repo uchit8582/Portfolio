@@ -1,0 +1,426 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialised;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.hero .left img{
+    width: 400px;
+
+}
+
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section .about .about-me-img{
+    height: 450px;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social i{
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    height: 35px;
+    justify-content: center;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .social i:hover{
+    background: var(--primary);
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading +p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+section.services{
+    background: var(--light);
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+section.services .card-wrapper .card i{
+    color: var(--primary);
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.designer{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: var(--pure);
+     clip-path: polygon(0 0,100% 0,100% 100%,67% 80%,0 100%); 
+    padding-bottom: 14rem;
+}
+
+section.designer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.designer p{
+    margin-bottom: 2rem;
+    font-family: 'Lato',sans-serif;
+}
+
+
+
+
+
+/* .skill-bar .bar .info span{
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 500px;
+}
+
+.skill-bar .bar .info{
+    margin-bottom: 5px;
+}
+
+.skill-bar{
+    width: 600px;
+    background: var(--pure);
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    justify-self: center;
+}
+
+.skill-bar .bar{
+    margin: 20px 0;
+}
+
+.skill-bar .bar:first-child{
+    margin-top: 0px;
+}
+
+.skill-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100px;
+    background: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+    0px 1px rgba(255,255,255,0.8);
+
+
+}
+
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border: right width 0px; 
+    border-top-color: #000;
+}
+
+.bar .progress-line span::after{
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 2.7px 8px;
+   
+
+}
+
+.progress-line.html/css span::after{
+    content: "90%";
+}
+
+.progress-line.javascript span::after{
+    content: "70%";
+}
+.progress-line.python span::after{
+    content: "40%";
+}
+.progress-line.asp.net span::after{
+    content: "90%";
+}
+.progress-line.my sql span::after{
+    content: "%";
+} */
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 30px 0 30px;
+}
+
+/* .wrapper.img-area img{
+    background:var(--dark)
+} */
+
+.wrapper h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15%;
+    text-align: left;
+}
+
+.wrapper img{
+    width: 100%;
+    
+}
+
+.img-area{
+    width: 40%;
+    float: left;
+}
+
+.skills-area{
+    width: 55%;
+    position: relative;
+    float: right;
+    margin-top: 110px;
+}
+
+.box{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.box li{
+    margin-bottom: 50px;
+    height: 35%;
+}
+
+.box li b{
+    position: relative;
+    top: -40px;
+    font-size: 20px;
+}
+
+.line{
+    height: 5px;
+    margin: 2px 0;
+    background: var(--dark);
+    position: absolute;
+}
+
+.box1{
+    width: 90%;
+    animation: box1 2s ease-out;
+}
+
+.box2{
+    width: 85%;
+    animation: box2 2s ease-out;
+}
+
+.box3{
+    width: 80%;
+    animation: box3 2s ease-out;
+}
+
+@keyframes box1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes box2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes box3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
